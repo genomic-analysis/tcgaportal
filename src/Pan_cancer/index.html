@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCGA portal</title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLES-->
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="navbar" style="background:#DFDFDF; border: 2px solid #DFDFDF; font-size:120%;">
+      <ul class="nav navbar-nav navbar-left" style="height=120px;">
+	<li><a href="../index.html"><font color="black" size=4px>TCGAportal</font></a></li>
+	<li><a href="../index.html">TCGA</a></li>
+	<li><a href="index.html">Pan-cancer</a></li>
+	<li><a href="../download.html">Download</a></li>
+	<li><a href="../Tools/dgsea/index.html">Tools</a></li>
+	<li><a href="../news.html">News</a></li>
+	<li><a href="../about.html">About</a></li>
+      </ul> 
+    </div>
+    
+    <form action="process.php">
+      <center>
+	<p> </p>
+	<p>Gene expression in TCGA Pan-cancer and GTEx normal</p>
+	<p>
+	  Gene name:
+	  <input type="text" name="geneName" class="biginput" id="autocomplete" placeholder="enter gene" size="10">
+	  <input id="Submit" type="submit" value="Submit" />
+	</p>
+      </center>
+    </form>
+  </body>
+
+  <!-- JQUERY SCRIPTS -->
+  <script src="../assets/js/jquery-1.10.2.js"></script>
+  <!-- BOOTSTRAP SCRIPTS -->
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <!-- METISMENU SCRIPTS -->
+  <script src="../assets/js/jquery.metisMenu.js"></script>
+  <script src="../assets/js/custom.js"></script>
+
+  <script src="../assets/js/jquery-1.9.1.min.js"></script>
+  <script src="../assets/js/jquery.autocomplete.min.js"></script>
+  <script src="../assets/js/currency-autocomplete.js"></script>  
+  <script>
+    function devide() {
+    var x = document
+    .getElementById("devidePatient").value
+    if (x == "user") {
+    document.getElementById("HighCut").style.display = 'block';
+    document.getElementById("HighVal").style.display = 'block';
+    document.getElementById("LowCut").style.display = 'block';
+    document.getElementById("LowVal").style.display = 'block';
+    } else {
+    document.getElementById("HighCut").style.display = 'none';
+    document.getElementById("HighVal").style.display = 'none';
+    document.getElementById("LowCut").style.display = 'none';
+    document.getElementById("LowVal").style.display = 'none';
+    }
+    }
+  </script>
+</html>
+
+
