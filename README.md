@@ -1,2 +1,2 @@
-# TCGA-portal web-based server source code
+# TCGA-portal server source code
 
